@@ -11,9 +11,13 @@ public class Director extends Gerente {
 
 	@Override
 	public void brindarDetalle(String nombre, Double salario, String fechaC) {
+		this.nombre = nombre ;
+		this.salario = salario;
+		this.fechaCumpleaños = fechaC;
 		this.salario = salario + this.extra;
 
 	}
+	
 
 	public Double getExtra() {
 		return extra;
